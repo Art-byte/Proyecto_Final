@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SuperNegro"
+    tools:context=".Alertas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blacknew">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txvRecordatorios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txvRecordatorios"
+                android:textColor="@android:color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/txvNombreRecordatorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/txvNombreRecordatorios"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edtNombreAlerta"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_escribirReco"
+                android:background="@drawable/input"
+                android:backgroundTint="#4BFFFFFF"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/txvHoraDelRecordatorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/txvHoraRecordatorios"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/input"
+                android:backgroundTint="#4BFFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHoraRecordatorio"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/btn_fondo_color"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/btnFechaRegistro"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/txvHoraMontoAPagarRecordatorio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/HoraFrecuencia"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/txvTotalAPagar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/txvTotalPago"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/edtMontoAPagarRecordatorio"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:hint="$0.00"
+                android:background="@drawable/input"
+                android:inputType="number"
+                android:backgroundTint="#4BFFFFFF"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+
+            <Button
+                android:id="@+id/btnGuardarAlerta"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/GuardandoIngreso"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_fondo_color"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvwRecordatorios"
+                            android:layout_width="match_parent"
+                            android:layout_height="418dp" />
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

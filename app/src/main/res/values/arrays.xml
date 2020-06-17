@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Delegacion">
+        <item>Delegacion</item>
+        <item>Alvaro Obregon</item>
+        <item>Azcapotzalco</item>
+        <item>Benito Juarez</item>
+        <item>Coyoacan</item>
+        <item>Cuajimalpa de Morelos</item>
+        <item>Cuauhtemoc</item>
+        <item>Gustavo A. Madero</item>
+        <item>Iztacalco</item>
+        <item>Iztapalapa</item>
+        <item>Magdalena Contreras</item>
+        <item>Miguel Hidalgo</item>
+        <item>Milpa Alta</item>
+        <item>Tlahuac</item>
+        <item>Tlalpan</item>
+        <item>Venustiano Carranza</item>
+        <item>Xochimilco</item>
+        <item>Cárdenas</item>
+        <item>Ixcaquixtla</item>
+        <item>La Cruz</item>
+        <item>Acaxochitlán</item>
+        <item>Kanasín</item>
+        <item>Juchitepec</item>
+        <item>Acatic</item>
+        <item>Ixtacomitán</item>
+        <item>Buenavista</item>
+        <item>Acuitzio</item>
+        <item>Kanasín</item>
+        <item>Calcahualco</item>
+        <item>Matachí</item>
+        <item>La Libertad</item>
+        <item>Cacahoatán</item>
+    </string-array>
+
+
+
+    <string-array name="Movimientos">
+        <item>Tipo de movimiento</item>
+        <item>Gasto</item>
+        <item>Ingreso</item>
+    </string-array>
+
+</resources>
+

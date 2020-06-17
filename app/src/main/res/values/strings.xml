@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Proyecto_Final</string>
+
+
+    <string name="text_escribirReco">Escribir...</string>
+    <string name="HoraFrecuencia">00 : 00</string>
+    <string name="frgUbicacion">Ubicacion del gasto</string>
+    <string name="Agregaringreso">Agregar ingreso</string>
+    <string name="AgregarGastos">Nuevo movimiento</string>
+    <string name="Movimientos">Movimientos</string>
+    <string name="Recordatorios">Recordatorio</string>
+    <string name="miPerfil">Mi perfil</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="Bati">BatiAhorros</string>
+    <string name="txvsDescripcion">Nombre del movimiento</string>
+    <string name="Agregar_Movimiento">Agregar movimiento</string>
+    <string name="AgregarMovimiento">Agregar nuevo movimiento</string>
+
+
+    <string name="txvLogin">Ingresar</string>
+    <string name="edtEmail">Correo electronico</string>
+    <string name="edtPassword">Contraseña</string>
+    <string name="txvRegistro">Registrarse</string>
+    <string name="hintNombreRegistro">Nombre</string>
+    <string name="hintApRegistro">Apellido paterno</string>
+    <string name="hintAmRegistro">Apellido materno</string>
+    <string name="rdbMasculino">Masculino</string>
+    <string name="rdbFemenino">Femenino</string>
+    <string name="hintFechaRegistro">Fecha de nacimiento</string>
+    <string name="hintDireccion">Nombre de la calle</string>
+    <string name="hintTelefono">Telefono</string>
+    <string name="hintEmail">Correo electronico</string>
+    <string name="hintPassword">Contraseña</string>
+    <string name="btnOk">Guardar cambios</string>
+
+    <string name="CargandoDatos">Por favor espere ...</string>
+    <string name="GuardandoDatos">Guardando datos ...</string>
+
+    <string name="txvSaldo">"Tu capital es: "</string>
+    <string name="txvFechaMod">Ultima modificacion</string>
+    <string name="txvReporteMensual">Reporte general</string>
+    <string name="txvMenuPrincipal">Menu principal</string>
+    <string name="AgregarIngreso">Nuevo ingreso</string>
+    <string name="cantidadAgregar">Cantidad a Agregar</string>
+    <string name="tipoIngreso">Selecciona el tipo de ingreso</string>
+    <string name="txvDescripcion">Nombre del movimiento</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="FechaIngreso">Fecha del Ingreso</string>
+    <string name="GuardandoIngreso">Guardar</string>
+    <string name="AgregarGasto">Nuevo gasto</string>
+    <string name="cantidadgastada">Cantidad del movimiento</string>
+    <string name="tipoGasto">Selecciona el tipo de movimiento</string>
+    <string name="FechaGasto">Fecha del gasto</string>
+    <string name="Perfil">Mi perfil</string>
+    <string name="Delegacion">Delegacion</string>
+    <string name="txvRegistrarse">Registrase</string>
+    <string name="txvpregunta">¿Aún no tienes cuenta?</string>
+    <string name="hitgasto">$0.00</string>
+    <string name="Ingreso">Tipo ingreso</string>
+    <string name="photo">Photo</string>
+    <string name="textCantidad">Cantidad</string>
+    <string name="text_Fecha">Fecha</string>
+    <string name="txvEditarPerfil">Editar perfil</string>
+    <string name="btnInicio">INICIAR SESION</string>
+    <string name="txvFechaDefaultRegistro">22 / 04 / 20</string>
+    <string name="btnFechaRegistro">Cambiar</string>
+    <string name="btnFechaIngreso">insertar fecha</string>
+    <string name="btnEditarFechaPerfil">nueva fecha</string>
+    <string name="textMovimiento">Movimiento</string>
+    <string name="textMonto">$0.00</string>
+    <string name="text_FechaMovimiento">17/04/1995</string>
+    <string name="txvMisMovimientos">Mis movimientos</string>
+    <string name="txvRecordatorios">Recordatorios</string>
+    <string name="txvNombreRecordatorios">Nombre del recordatorio</string>
+    <string name="txvHoraRecordatorios">Hora de alarma</string>
+    <string name="txvTotalPago">Monto a pagar</string>
+
+
+    <string name="textInforRecordatorio">Info recordatorio</string>
+    <string name="textRepetir">"Repetir cada: "</string>
+    <string name="textTiempoRepeticion">Diario</string>
+    <string name="costo">$0.00</string>
+    <string name="Detalle_alertas">Detalle de la Alerta</string>
+    <string name="Detalle_Movimientox">Detalle del movimiento</string>
+    <string name="txvNombreAlerta">Nombre de la alerta</string>
+    <string name="txvHorarAct">Hora de la activacion</string>
+    <string name="txvMontoPagar">Monto a pagar</string>
+    <string name="txvTiempoRepe">Frecuencia de repeticion</string>
+    <string name="txvTituloMov">Tipo de movimiento</string>
+    <string name="frgUbicaciondelMovimiento">Ubicacion del movimiento</string>
+    <string name="swtActivar">Activar</string>
+    <string name="UltimoMov">"Antes guardaste: "</string>
+    <string name="alcohol">Comida</string>
+    <string name="textID">ID</string>
+    <string name="verMovimientoDec">Ver solo gastos</string>
+    <string name="btnGastoRegistro">Solo gastos</string>
+    <string name="btnIngresoRegistro">Solo Ingresos</string>
+    <string name="btnverTodo">Todos los movimientos</string>
+    <string name="btnActualizar">Actualiza el Bati-Reporte</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hintNumExt">Num.Exterior</string>
+    <string name="hintNumInt">Num.Interior</string>
+    <string name="hintCP">Codigo postal</string>
+    <string name="googleApiKeyMaps">AIzaSyCRm5cppGXXUFTbZr43FB9jmNAHRd9-4PI</string>
+
+
+</resources>

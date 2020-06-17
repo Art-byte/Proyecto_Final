@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+tools:context=".Fragments.Registrar_Editar">
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:background="@color/blacknew"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txvRegistro"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:background="@color/blacknew"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/edtNombreRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/hintNombreRegistro"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtApRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/hintApRegistro"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/edtAmRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/hintAmRegistro"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/txvTituloGenero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="Seleccionar genero"
+                    android:textSize="16sp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rdgGenerosRegistro"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:background="@drawable/input">
+
+
+                    <RadioButton
+                        android:id="@+id/rdbMasculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/rdbMasculino"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbFemenino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/rdbFemenino"/>
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/txvTituloFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="Fecha de nacimiento"
+                    android:textSize="16sp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnFechaRegistro"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/btn_fondo_color"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/btnFechaRegistro"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/txvFechaRegistro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/txvFechaDefaultRegistro"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/txvTituloDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="Direccion"
+                    android:textSize="16sp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp" />
+
+
+                <EditText
+                    android:id="@+id/edtCalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/hintDireccion"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#4BFFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/edtNum_ext"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:ems="10"
+                    android:hint="@string/hintNumExt"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/edtNum_Int"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:ems="10"
+                    android:hint="@string/hintNumInt"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/white" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#4BFFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtCP"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:ems="10"
+                    android:hint="@string/hintCP"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spnDelegacion"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:spinnerMode="dialog"
+                    android:outlineAmbientShadowColor="@android:color/white"
+                    android:outlineSpotShadowColor="@android:color/white"
+                    android:entries="@array/Delegacion"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp" />
+
+            </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <EditText
+                    android:id="@+id/edtEmails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/hintEmail"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"/>
+                <EditText
+                    android:id="@+id/edtPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/hintPassword"
+                    android:background="@drawable/input"
+                    android:backgroundTint="#4BFFFFFF"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnEnviarRegistro"
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_fondo_color"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/btnOk"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+<include
+    android:id="@+id/progressBarGuardar"
+    layout="@layout/bar_save"
+    android:visibility="gone"/>
+
+
+</LinearLayout>

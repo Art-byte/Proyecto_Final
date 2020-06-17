@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/caja_fuerte"
+    tools:context=".Nuevo_Movimiento">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blacknew">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvArgegarGasto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/AgregarMovimiento" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:orientation="vertical">
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txvTipoMov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tipoGasto"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+                    <Spinner
+                        android:id="@+id/spnTipoMovimiento"
+                        android:layout_width="339dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#4BFFFFFF"
+                        android:background="@drawable/input"
+                        android:entries="@array/Movimientos"
+                        android:spinnerMode="dialog"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+
+
+                    <TextView
+                        android:id="@+id/txvAddGasto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cantidadgastada"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/edtCantidadMov"
+                        android:layout_width="339dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hitgasto"
+                        android:inputType="number"
+                        android:background="@drawable/input"
+                        android:backgroundTint="#4BFFFFFF"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:textColorHint="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/txvTituloDesMov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txvsDescripcion"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+
+                    <EditText
+                        android:id="@+id/edtDesMov"
+                        android:layout_width="339dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/descripcion"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/input"
+                        android:backgroundTint="#4BFFFFFF"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:textColorHint="@color/white" />
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#4BFFFFFF"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btnTituloUltimoMovimiento"
+                            android:layout_width="159dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left"
+                            android:background="@drawable/btn_fondo_color"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/UltimoMov"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/txvUltimoMovimiento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="17dp"
+                            android:textColor="@color/white"/>
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/txvTituloFechaGasto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/FechaGasto"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/input"
+                        android:backgroundTint="#4BFFFFFF"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnFechaEgreso"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left"
+                            android:background="@drawable/btn_fondo_color"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/btnFechaIngreso"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:id="@+id/txvFechaMov"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/txvFechaDefaultRegistro"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txvTituloUbicacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frgUbicacion"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+                    <fragment
+                        android:id="@+id/fgmMapMovimiento"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="330dp"
+                        android:layout_height="268dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+
+
+                    <Button
+                        android:id="@+id/btnGuardarMov"
+                        android:layout_width="339dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_fondo_color"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/GuardandoIngreso"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
